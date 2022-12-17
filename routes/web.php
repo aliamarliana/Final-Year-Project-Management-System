@@ -17,7 +17,10 @@ use App\Http\Controllers\adminControl;
 
 Route::get("/",[homeControl::class,'index']);
 Route::get("/redirect",[homeControl::class,"redirectFunct"]);
-Route::get("/users",[adminControl::class,'user']);
+Route::get("/list-of-project",[adminControl::class,'list']);
+Route::get("/add-project",[adminControl::class,'add']);
+Route::post("/store-project",[adminControl::class,'store']);
+Route::get('delete/{id}',[adminControl::class,'delete']);
 
 Route::middleware([
     'auth:sanctum',
