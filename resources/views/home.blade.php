@@ -26,48 +26,50 @@ https://templatemo.com/tm-561-purple-buzz
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- ***** Header Area Start ***** -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
-                <i class='bx bx-buildings bx-sm text-dark'></i>
-                <span class="text-dark h4">FYP</span> <span class="text-primary h4">Management System</span>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="container d-flex justify-content-between align-items-center">
 
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
-                <div class="flex-fill mx-xl-5 mb-2">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                    
+                        <!-- ***** Logo Start ***** -->
+                        <a class="navbar-brand h1" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-dark'></i>
+                        <span class="text-dark h4">FYP</span> <span class="text-primary h4">Management System</span>
+                        </a>
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                         <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
                         </li>
+                           	
                         <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
                         </li>
 
-                        @if (Route::has('login'))
-                        <li class="nav-item"> 
-                        @auth
-                            <a href="{{ url('/dashboard') }}" class="nav-link btn-outline-primary rounded-pill px-3">Dashboard</a></li>
-                        @else
-                        <li class="nav-item"> 
-                            <a href="{{ route('login') }}" class="nav-link btn-outline-primary rounded-pill px-3">Log in</a></li>
-
-                            @if (Route::has('register'))
-                            <li class="nav-item"> 
-                                <a href="{{ route('register') }}" class="nav-link btn-outline-primary rounded-pill px-3">Register</a></li>
-                            @endif
-                        @endauth
-                      
+                            <li>
+                                @if (Route::has('login'))
+                            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                                @auth
+                                   <li > <x-app-layout>
+                                    </x-app-layout></li>
+                                @else
+                                    <li class="nav-item"><a href="{{ route('login') }}" class="nav-link btn-outline-primary rounded-pill px-3">Log in</a></li>
+                                    @if (Route::has('register'))
+                                      <li class="nav-item">  <a href="{{ route('register') }}" class="nav-link btn-outline-primary rounded-pill px-3">Register</a></li>
+                                    @endif
+                                @endauth
+                            </div>
                         @endif
-                    </ul>
+                            </li>
+                        </ul>        
+                        <!-- ***** Menu End ***** -->
+                    </nav>
                 </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Close Header -->
+    <!-- ***** Header Area End ***** -->
 
 
     <!-- Start Banner Hero -->
