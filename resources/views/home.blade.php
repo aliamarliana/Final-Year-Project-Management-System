@@ -41,31 +41,26 @@ https://templatemo.com/tm-561-purple-buzz
                 <div class="flex-fill mx-xl-5 mb-2">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="#">Home</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="#">About</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="#">Work</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Work</a>
                         </li>
                         <li class="nav-item">
-                        @if (Route::has('login'))
-            
-                        @auth
-                        <a href="{{ url('/dashboard') }}" class="nav-link btn-outline-primary rounded-pill px-3">Dashboard</a></li>
-                        
-                        @else
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Pricing</a>
+                        </li>
                         <li class="nav-item">
-                        <a href="{{ route('login') }}" class="nav-link btn-outline-primary rounded-pill px-3">Log in</a></li>
-                        <li class="nav-item">
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="nav-link btn-outline-primary rounded-pill px-3">Register</a></li>
-                        @endif
-                        @endauth           
-                        @endif
-                      
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                        </li>
                     </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
                 </div>
             </div>
         </div>
