@@ -14,7 +14,18 @@ return new class extends Migration
     public function up()
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->String('category');
+            $table->String('title');
+            $table->String('start_date');
+            $table->String('end_date');
+            $table->String('duration'); //in month
+            $table->String('progress');
+            $table->String('status');
+            $table->String('student_name');
+            $table->String('supervisor_name');
+            $table->String('examiner1_name');
+            $table->String('examiner2_name');
             $table->timestamps();
         });
     }

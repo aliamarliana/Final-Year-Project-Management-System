@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeControl;
+use App\Http\Controllers\adminControl;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,8 @@ use App\Http\Controllers\homeControl;
 
 Route::get("/",[homeControl::class,'index']);
 Route::get("/redirect",[homeControl::class,"redirectFunct"]);
+Route::get("/users",[adminControl::class,'user']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
