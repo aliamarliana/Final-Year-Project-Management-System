@@ -95,6 +95,11 @@ https://templatemo.com/tm-561-purple-buzz
         </div>
     </div>
     <!-- End Banner Hero -->
+<style>
+body {
+ background-image: url('https://www.itarian.com/assets-new/images/project-management.png');
+}
+</style>
 
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
