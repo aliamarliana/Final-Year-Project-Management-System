@@ -73,9 +73,12 @@ $i = 1
                     </nav>
                 </div>
     <!-- ***** Header Area End ***** -->
-
-<h1>List Of Supervisee</h1>
-<table border="border">
+<div style="position:relative; top:60px; right:-80px;">
+<h2 class="banner-heading h2 text-secondary display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
+List of Supervisees</h2>
+<p class="banner-body text-muted py-3 mx-0 px-0">
+Below are the list of your supervisees.</p>
+<table class="styled-table">
     <thead>
     <tr>
         <th>No.<th>
@@ -109,7 +112,42 @@ $i = 1
     @endforeach
 </tbody>
 </table>
+</div>
 
+<style>
+      th,td {
+        height: 60px;
+        width: 80px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+
+    .styled-table thead tr {
+    background-color: #6c7ad2;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #f5f6f5;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f5f6f5;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #6c7ad2;
+}
+</style>
 <style>
 
 .button1 {
