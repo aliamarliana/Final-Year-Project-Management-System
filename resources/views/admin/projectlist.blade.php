@@ -52,8 +52,8 @@ $i = 1
                             <td> {{$project['supervisor_name']}} </td>
                             <td> {{$project['examiner1_name']}} </td>
                             <td> {{$project['examiner2_name']}} </td>
-                            <td><a href={{"edit/".$project['id']}}>Edit</a>
-                              <a href={{"delete/".$project['id']}}>Delete</a></td>
+                            <td><a href={{"edit/".$project['id']}}><button class="button1">Edit</button></a>&nbsp;
+                              <a href={{"delete/".$project['id']}}><button class="button2">Delete</button></a></td>
                           </tr>
                           @endforeach
                         </tbody>
@@ -62,7 +62,41 @@ $i = 1
                   </div>
                 </div>
   </div>
+
+  <span>
+    {{$data->links()}}
+</span>
   @include("admin.adminscript")
   </body>
 </html>
+
+<style>
+
+.button1 {
+  background-color: orange; 
+  color: white; 
+  border: 2px solid orange;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.button1:hover {
+  background-color: white;
+  color: orange;
+}
+
+
+.button2 {
+  background-color: red; 
+  color: white; 
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.button2:hover {
+  background-color: white;
+  color: red;
+}
+</style>
 

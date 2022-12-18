@@ -10,7 +10,7 @@ class adminControl extends Controller
 {
     //
     public function list(){
-        $data=Project::all();
+        $data=Project::paginate(7);
         return view("admin.projectlist",compact("data"));
     }
 
