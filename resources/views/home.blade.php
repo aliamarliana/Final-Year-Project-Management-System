@@ -43,11 +43,11 @@ https://templatemo.com/tm-561-purple-buzz
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/redirect">Home</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{url('/redirect')}}">Home</a>
                         </li>
                            	
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/list-of-supervisee">List of Supervisee</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{url('/list-of-supervisee')}}">List of Supervisee</a>
                         </li>
 
                             <li>
