@@ -90,9 +90,27 @@ Edit Project Details</h2>
           type="text"
           name="name"
           value="{{$proj['student_name']}}"
-          class="formbold-form-input" readonly
+          class="formbold-form-input" disabled
         />
       </div>
+
+      <div class="formbold-input-group">
+        <label class="formbold-form-label">
+        Project Category:
+        </label>
+
+        <select class="formbold-form-select" name="category" required>
+        @if($proj['category'] != "Development Project")
+      <option value="{{$proj['category']}}">{{$proj['category']}}</option>
+      <option value="Development Project">Development Project</option>
+      @else
+      <option value="{{$proj['category']}}">{{$proj['category']}}</option>
+        <option value="Research Project">Research Project</option>
+      @endif
+        </select>
+      </div>
+
+
 
       <div class="formbold-input-group">
         <label for="name" class="formbold-form-label">Project Title: </label>
@@ -100,7 +118,7 @@ Edit Project Details</h2>
           type="text"
           name="title"
           value="{{$proj['title']}}"
-          class="formbold-form-input" readonly
+          class="formbold-form-input"
         />
       </div>
 

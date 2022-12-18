@@ -29,7 +29,7 @@ class homeControl extends Controller
 
         public function editproj($id){
             $proj = Project::find($id);
-            return view('editproject', compact("proj"));
+            return view('editsupervisee', compact("proj"));
         }
 
         public function updateproj(Request $req){
@@ -37,6 +37,8 @@ class homeControl extends Controller
             $toDate = Carbon::parse($req->start_date);
             $fromDate = Carbon::parse($req->end_date);
             $months = $toDate->diffInMonths($fromDate);
+            $project->category = $req->category;
+            $project->title = $req->title;
             $project->start_date = $req->start_date;
             $project->end_date=$req->end_date;
             $project->duration=$months;

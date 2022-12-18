@@ -73,7 +73,7 @@ $i = 1
                     </nav>
                 </div>
     <!-- ***** Header Area End ***** -->
-<div style="position:relative; top:60px; right:-80px;">
+<div style="position:relative; top:60px; right:-40px;">
 <h2 class="banner-heading h2 text-secondary display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
 List of Supervisees</h2>
 <p class="banner-body text-muted py-3 mx-0 px-0">
@@ -83,6 +83,7 @@ Below are the list of your supervisees.</p>
     <tr>
         <th>No.<th>
         <th>Student Name<th>
+        <th>Project Category<th>
         <th>Project Title<th>
         <th>Start Date<th>   
         <th>End Date<th>
@@ -99,6 +100,7 @@ Below are the list of your supervisees.</p>
     <tr>
         <td>{{$i++}}<td>
         <td>{{$proj['student_name']}}<td>
+        <td>{{$proj['category']}}<td>
         <td>{{$proj['title']}}<td>
         <td>{{$proj['start_date']}}<td>  
         <td>{{$proj['end_date']}}<td>
