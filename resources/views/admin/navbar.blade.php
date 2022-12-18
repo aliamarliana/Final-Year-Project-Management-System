@@ -1,7 +1,7 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <center><h3>FYP Management System</h3></center>
+          <center><a href="/redirect" id="GFG"><h3><br>FYP Management System</h3></a></center>
         </div>
         <ul class="nav">
 
@@ -27,5 +27,12 @@
           
           <ul>
     </nav>
+
+    <style>
+        #GFG {
+            text-decoration: none;
+            color:white;
+        }
+    </style>
           <!-- content-wrapper ends -->
           

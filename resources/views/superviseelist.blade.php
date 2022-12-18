@@ -86,7 +86,7 @@ Below are the list of your supervisees.</p>
         <th>Project Title<th>
         <th>Start Date<th>   
         <th>End Date<th>
-        <th>Duration<th>    
+        <th>Duration (in month)<th>    
         <th>Progress<th> 
         <th>Status<th> 
         <th>Examiner 1 Name<th>    
@@ -113,7 +113,6 @@ Below are the list of your supervisees.</p>
 </tbody>
 </table>
 </div>
-
 <style>
       th,td {
         height: 60px;

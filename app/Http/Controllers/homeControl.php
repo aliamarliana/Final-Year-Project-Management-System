@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Project;
@@ -34,9 +34,12 @@ class homeControl extends Controller
 
         public function updateproj(Request $req){
             $project = Project::find($req->id);
+            $toDate = Carbon::parse($req->start_date);
+            $fromDate = Carbon::parse($req->end_date);
+            $months = $toDate->diffInMonths($fromDate);
             $project->start_date = $req->start_date;
             $project->end_date=$req->end_date;
-            $project->duration=$req->duration;
+            $project->duration=$months;
             $project->progress=$req->progress;
             $project->status=$req->status;
             $project->save();

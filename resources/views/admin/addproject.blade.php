@@ -37,7 +37,7 @@
 
     <label>Supervisor Name: </label>&nbsp;&nbsp;
     <select name="supervisor_name" required>
-    <option selected disabled value="">-- Please choose supervisor name --</option>
+    <option selected value="Not assigned yet">-- Please choose supervisor name --</option>
       @foreach($data as $data1)
       @if($data1->usertype=="0")
       <option value="{{$data1['name']}}">{{$data1['name']}}</option>
@@ -47,7 +47,7 @@
 
     <label>Examiner 1 Name: </label>&nbsp;&nbsp;
     <select name="examiner1_name" required>
-    <option selected disabled value="">-- Please choose examiner 1 name --</option>
+    <option selected  value="Not assigned yet">-- Please choose examiner 1 name --</option>
       @foreach($data as $data1)
       @if($data1->usertype=="0")
       <option value="{{$data1['name']}}">{{$data1['name']}}</option>
@@ -57,7 +57,7 @@
 
     <label>Examiner 2 Name: </label>&nbsp;&nbsp;
     <select name="examiner2_name" required>
-    <option selected disabled value="">-- Please choose examiner 2 name --</option>
+    <option selected value="Not assigned yet">-- Please choose examiner 2 name --</option>
       @foreach($data as $data1)
       @if($data1->usertype=="0")
       <option value="{{$data1['name']}}">{{$data1['name']}}</option>
