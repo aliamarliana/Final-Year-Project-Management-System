@@ -17,7 +17,8 @@ class adminControl extends Controller
     public function add(){
         $data=User::all();
         $stud=Student::all();
-        return view("admin.addproject",compact("data","stud"));
+        $proj=Project::all();
+        return view("admin.addproject",compact("data","stud","proj"));
     }
 
     public function store(Request $req){
