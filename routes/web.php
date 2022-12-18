@@ -20,7 +20,12 @@ Route::get("/redirect",[homeControl::class,"redirectFunct"]);
 Route::get("/list-of-project",[adminControl::class,'list']);
 Route::get("/add-project",[adminControl::class,'add']);
 Route::post("/store-project",[adminControl::class,'store']);
-Route::get('delete/{id}',[adminControl::class,'delete']);
+Route::get('/delete/{id}',[adminControl::class,'delete']);
+Route::get('/edit/{id}',[adminControl::class,'edit']);
+Route::post('/update',[adminControl::class,'update']);
+Route::get("/list-of-supervisee",[homeControl::class,"show"]);
+Route::get('/editproj/{id}',[homeControl::class,'editproj']);
+Route::post('/updateproj',[homeControl::class,'updateproj']);
 
 Route::middleware([
     'auth:sanctum',

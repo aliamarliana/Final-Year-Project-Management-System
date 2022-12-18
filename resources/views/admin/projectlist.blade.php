@@ -52,8 +52,8 @@ $i = 1
                             <td> {{$project['supervisor_name']}} </td>
                             <td> {{$project['examiner1_name']}} </td>
                             <td> {{$project['examiner2_name']}} </td>
-                            <td><a href={{"edit/".$project['id']}}><button class="button1">Edit</button></a>&nbsp;
-                              <a href={{"delete/".$project['id']}}><button class="button2">Delete</button></a></td>
+                            <td><a href={{"/edit/".$project['id']}}><button class="button1">Edit</button></a>&nbsp;
+                              <a href={{"/delete/".$project['id']}}><button class="button2">Delete</button></a></td>
                           </tr>
                           @endforeach
                         </tbody>

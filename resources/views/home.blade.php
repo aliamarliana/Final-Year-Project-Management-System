@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Purple Buzz HTML Template with Bootstrap 5 Beta 1</title>
+    <title>FYP Management System</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
@@ -32,7 +32,7 @@ https://templatemo.com/tm-561-purple-buzz
 
                     
                         <!-- ***** Logo Start ***** -->
-                        <a class="navbar-brand h1" href="index.html">
+                        <a class="navbar-brand h1" href="/redirect">
                         <i class='bx bx-buildings bx-sm text-dark'></i>
                         <span class="text-dark h4">FYP</span> <span class="text-primary h4">Management System</span>
                         </a>
@@ -43,11 +43,11 @@ https://templatemo.com/tm-561-purple-buzz
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/redirect">Home</a>
                         </li>
                            	
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/list-of-supervisee">List of Supervisee</a>
                         </li>
 
                             <li>
