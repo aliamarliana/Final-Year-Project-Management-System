@@ -22,7 +22,7 @@ $i = 1
                       <table class="table">
                         <thead>
                           <tr>
-                            <th> No. </th>
+                            
                             <th> Project Category </th>
                             <th> Project Title </th>
                             <th> Start Date </th>
@@ -40,7 +40,7 @@ $i = 1
                         <tbody>
                           @foreach($data as $project)
                           <tr>
-                            <td>{{$i++}}</td>
+                            
                             <td> {{$project['category']}} </td>
                             <td> {{$project['title']}} </td>
                             <td> {{$project['start_date']}} </td>
