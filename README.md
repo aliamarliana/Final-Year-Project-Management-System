@@ -4,7 +4,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-Auth_Service-green?logo=node.js)
 ![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql)
 ![Bootstrap](https://img.shields.io/badge/UI-Bootstrap-purple?logo=bootstrap)
-![Status](https://img.shields.io/badge/Status-Under_Development-yellow)
+![Status](https://img.shields.io/badge/Status-Finished-brightgreen)
 ![License](https://img.shields.io/badge/License-Academic_Project-lightgrey)
 
 ---
@@ -55,20 +55,24 @@ This project was developed for **CSEB5123 – Advanced Web Application Developme
 - Supervisor  
 
 **Primary Use Cases:**  
-Register Account • Login • Logout • Create Project • Assign Student • Assign Supervisor & Examiner • View / Update / Delete Project • Update Project Details
+- Register Account
+- Login
+- Logout 
+- Create Project 
+- Assign Student 
+- Assign Supervisor & Examiner 
+- View / Update / Delete Project 
+- Update Project Details
 
 ---
 
 ## 🗄️ Database Structure
 
 | Table | Description |
-|--------|--------------|
-| **users** | Stores user data (Coordinator, Supervisor, Student) |
-| **projects** | Project details (title, duration, type, progress, status) |
-| **assignments** | Links students, supervisors, and examiners |
-| **milestones** | Tracks progress milestones (1, 2, Final Report) |
-
-💡 All relationships are enforced using **foreign keys** to maintain referential integrity.
+|-------|-------------|
+| **users** | Stores user data (Coordinator, Supervisor, Admin) |
+| **projects** | Stores project details including student, supervisor, examiners, progress, and status |
+| **students** | Stores student IDs and names |
 
 ---
 
