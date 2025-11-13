@@ -25,7 +25,7 @@ This project was developed for **CSEB5123 – Advanced Web Application Developme
 | **Frontend** | Laravel Blade / HTML / CSS / Bootstrap | User interface and responsive design |
 | **Backend** | Laravel Framework (PHP) | Business logic and routing |
 | **Authentication Service** | Node.js | Handles user registration & authentication |
-| **Database** | MySQL | Stores structured data (users, projects, assignments) |
+| **Database** | MySQL | Stores structured data |
 
 ---
 
